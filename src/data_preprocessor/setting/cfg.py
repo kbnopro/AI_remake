@@ -9,4 +9,3 @@ def get_wsp_path () -> str :
 wsp_path = get_wsp_path()
 src_path = os.path.join(wsp_path,"src")
 
-print(wsp_path)
