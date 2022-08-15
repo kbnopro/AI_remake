@@ -32,4 +32,9 @@ resize_train_data_out = os.path.join(
     preprocessed_data_path, "resize_train_data_out.npy")
 train_data_label = os.path.join(preprocessed_data_path, "train_data_label")
 
+augment_train_data_frames = os.path.join(
+    preprocessed_data_path, "augment_train_data_frames.npy")
+augment_train_data_labels = os.path.join(
+    preprocessed_data_path, "augment_train_data_labels.npy")
+
 
