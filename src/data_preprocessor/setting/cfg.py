@@ -17,8 +17,8 @@ def remove_file(path: str) -> None:
 wsp_path = get_wsp_path()
 src_path = os.path.join(wsp_path, "src")
 
-test_data_path = os.path.join(src_path, "raw_dataset", "Test_data", "")
-train_data_path = os.path.join(src_path, "raw_datset", "train_data", "")
+test_data_path = os.path.join(src_path, "raw_dataset", "Test_data", "Test", "")
+train_data_path = os.path.join(src_path, "raw_dataset", "train_data", "")
 
 preprocessed_data_path = os.path.join(src_path, "preprocessed_data", "")
 
