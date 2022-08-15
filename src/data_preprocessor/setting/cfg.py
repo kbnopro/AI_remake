@@ -6,8 +6,7 @@ def get_wsp_path () -> str :
         wsp_path = os.path.dirname(wsp_path)
     return wsp_path
 
-def remove_file ( path ) -> None:
-    path : str 
+def remove_file ( path : str  ) -> None:
     if os.path.exists(path) :
         print(f'{path} deleted')
         os.remove(path)
