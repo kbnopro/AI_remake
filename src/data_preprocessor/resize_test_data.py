@@ -1,3 +1,4 @@
+from mmap import mmap
 import setting.cfg as cfg  # cfg file to get paths
 from npy_append_array import NpyAppendArray as npy_file
 import cv2
@@ -26,4 +27,9 @@ with npy_file(cfg.resize_test_data_out) as frames:
                 f'{os.path.basename(vid_name)}_{os.path.basename(frame_name[:-4:])}')
 
 
-np.save(cfg.test_data_framename,names)
+np.save(cfg.test_data_framename, names)
+
+names_file = np.load(cfg.test_data_framename, mmap_mode='r')
+print(names_file.shape)
+frames_file = np.load(cfg.resize_test_data_out, mmap_mode='r')
+print(frames_file.shape)
