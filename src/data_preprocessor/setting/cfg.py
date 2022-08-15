@@ -9,7 +9,9 @@ def get_wsp_path () -> str :
 def remove_file ( path ) -> None:
     path : str 
     if os.path.exists(path) :
+        print(f'{path} deleted')
         os.remove(path)
+    
 
 wsp_path = get_wsp_path()
 src_path = os.path.join(wsp_path,"src")
@@ -18,7 +20,7 @@ test_data_path = os.path.join(src_path,"raw_dataset","Test_data","")
 train_data_path = os.path.join(src_path,"raw_datset","train_data","")
 
 preprocessed_data_path = os.path.join(src_path,"preprocessed_data","")
-print(preprocessed_data_path)
+
 
 
 resize_test_data_out = os.path.join(preprocessed_data_path,"resize_test_data_out.npy")
