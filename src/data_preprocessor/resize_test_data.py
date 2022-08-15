@@ -1,4 +1,3 @@
-from mmap import mmap
 import setting.cfg as cfg  # cfg file to get paths
 from npy_append_array import NpyAppendArray as npy_file
 import cv2
